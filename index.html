@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCBM Career Institute | Best Coaching in Karol Bagh, Delhi</title>
+    <meta name="description" content="PCBM Career Institute - Premier coaching for NEET, IIT-JEE, K-12, Commerce & Olympiad preparation in Karol Bagh, Delhi. Expert faculty, proven results.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+/* ===== ROOT VARIABLES ===== */
+:root {
+    --primary: #1a3a8f;
+    --primary-dark: #0f2366;
+    --primary-light: #2d5fd3;
+    --secondary: #f97316;
+    --secondary-light: #fb923c;
+    --accent: #06b6d4;
+    --gradient: linear-gradient(135deg, #1a3a8f 0%, #2d5fd3 50%, #06b6d4 100%);
+    --gradient-warm: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+    --text: #1e293b;
+    --text-light: #64748b;
+    --text-lighter: #94a3b8;
+    --bg: #ffffff;
+    --bg-light: #f8fafc;
+    --bg-gray: #f1f5f9;
+    --border: #e2e8f0;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+    --shadow-xl: 0 20px 60px rgba(0,0,0,0.15);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { font-family: 'Poppins', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 100px 0; }
+#preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--primary-dark); display: flex; align-items: center; justify-content: center; z-index: 10000; transition: opacity 0.5s ease, visibility 0.5s ease; animation: preloader-autohide 0.5s ease 1.5s forwards; }
+#preloader.hide { opacity: 0; visibility: hidden; }
+@keyframes preloader-autohide { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+.loader span { display: inline-block; font-size: 48px; font-weight: 800; color: #fff; animation: bounce 1.4s ease infinite; margin: 0 4px; font-family: 'Playfair Display', serif; }
+.loader span:nth-child(2) { animation-delay: 0.1s; }
+.loader span:nth-child(3) { animation-delay: 0.2s; }
+.loader span:nth-child(4) { animation-delay: 0.3s; }
+@keyframes bounce { 0%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-30px); } }
+.gradient-text { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 16px 0; transition: var(--transition); background: transparent; }
+.navbar.scrolled { background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 10px 0; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+.nav-container { display: flex; align-items: center; justify-content: space-between; }
+.logo { display: flex; align-items: center; gap: 12px; z-index: 1001; }
+.logo-icon { width: 48px; height: 48px; background: var(--gradient); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 22px; box-shadow: 0 4px 15px rgba(26,58,143,0.3); }
+.logo-text { display: flex; flex-direction: column; }
+.logo-name { font-size: 22px; font-weight: 800; color: var(--primary); line-height: 1.1; letter-spacing: 1px; font-family: 'Playfair Display', serif; }
+.navbar:not(.scrolled) .logo-name { color: #fff; }
+.logo-tagline { font-size: 11px; color: var(--text-light); font-weight: 500; letter-spacing: 0.5px; }
+.navbar:not(.scrolled) .logo-tagline { color: rgba(255,255,255,0.8); }
+.nav-links { display: flex; align-items: center; gap: 8px; }
+.nav-links a { padding: 8px 16px; font-size: 14px; font-weight: 500; color: var(--text); border-radius: var(--radius-sm); position: relative; }
+.navbar:not(.scrolled) .nav-links a { color: rgba(255,255,255,0.9); }
+.nav-links a:hover, .nav-links a.active { color: var(--primary); background: rgba(26,58,143,0.08); }
+.navbar:not(.scrolled) .nav-links a:hover, .navbar:not(.scrolled) .nav-links a.active { color: #fff; background: rgba(255,255,255,0.15); }
+.nav-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; background: #25D366; color: #fff !important; border-radius: 50px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 15px rgba(37,211,102,0.3); transition: var(--transition); }
+.nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.4); }
+.hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1001; padding: 4px; }
+.hamburger span { width: 28px; height: 2.5px; background: var(--text); border-radius: 4px; transition: var(--transition); }
+.navbar:not(.scrolled) .hamburger span { background: #fff; }
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: 50px; font-size: 15px; font-weight: 600; cursor: pointer; border: none; transition: var(--transition); font-family: 'Poppins', sans-serif; }
+.btn-primary { background: var(--gradient); color: #fff; box-shadow: 0 4px 20px rgba(26,58,143,0.3); }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(26,58,143,0.4); }
+.btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+.btn-outline:hover { background: var(--primary); color: #fff; transform: translateY(-3px); }
+.btn-white { background: #fff; color: var(--primary); box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+.btn-white:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+.btn-outline-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); }
+.btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: #fff; transform: translateY(-3px); }
+.btn-course { background: var(--gradient); color: #fff; padding: 10px 24px; font-size: 14px; box-shadow: 0 4px 15px rgba(26,58,143,0.2); }
+.btn-course:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26,58,143,0.3); }
+.hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #0a1628 0%, #1a3a8f 40%, #2d5fd3 70%, #06b6d4 100%); position: relative; overflow: hidden; padding-top: 80px; }
+.hero-bg-shapes .shape { position: absolute; border-radius: 50%; opacity: 0.08; background: #fff; }
+.shape-1 { width: 600px; height: 600px; top: -200px; right: -100px; animation: float 20s ease-in-out infinite; }
+.shape-2 { width: 400px; height: 400px; bottom: -100px; left: -100px; animation: float 15s ease-in-out infinite reverse; }
+.shape-3 { width: 200px; height: 200px; top: 50%; left: 50%; animation: float 10s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 33% { transform: translateY(-30px) rotate(5deg); } 66% { transform: translateY(20px) rotate(-3deg); } }
+.hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 2; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; color: #fbbf24; font-size: 14px; font-weight: 500; margin-bottom: 24px; backdrop-filter: blur(10px); }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 20px; }
+.hero .highlight { color: #fbbf24; }
+.hero .gradient-text { background: linear-gradient(135deg, #06b6d4, #22d3ee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-description { font-size: 17px; color: rgba(255,255,255,0.8); line-height: 1.8; margin-bottom: 32px; max-width: 540px; }
+.hero-description strong { color: #fff; }
+.hero-buttons { display: flex; gap: 16px; margin-bottom: 48px; flex-wrap: wrap; }
+.hero-stats { display: flex; align-items: center; gap: 32px; padding: 24px 32px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-lg); backdrop-filter: blur(10px); }
+.stat-item { text-align: center; }
+.stat-number { font-size: 32px; font-weight: 800; color: #fff; font-family: 'Playfair Display', serif; }
+.stat-suffix { font-size: 24px; font-weight: 700; color: #fbbf24; }
+.stat-label { display: block; font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px; }
+.stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.2); }
+.hero-visual { display: flex; align-items: center; justify-content: center; }
+.hero-graphic { position: relative; width: 420px; height: 420px; }
+.graphic-circle { width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(45,95,211,0.2)); border: 2px solid rgba(255,255,255,0.1); animation: pulse-glow 4s ease-in-out infinite; }
+@keyframes pulse-glow { 0%, 100% { transform: scale(1); box-shadow: 0 0 40px rgba(6,182,212,0.1); } 50% { transform: scale(1.03); box-shadow: 0 0 60px rgba(6,182,212,0.2); } }
+.floating-card { position: absolute; background: rgba(255,255,255,0.12); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-md); padding: 16px 24px; display: flex; align-items: center; gap: 12px; color: #fff; font-weight: 600; font-size: 14px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); animation: float-card 6s ease-in-out infinite; }
+.floating-card i { font-size: 24px; color: #fbbf24; }
+.card-1 { top: 10%; left: -10%; animation-delay: 0s; }
+.card-2 { top: 5%; right: -5%; animation-delay: 1.5s; }
+.card-3 { bottom: 5%; right: -10%; animation-delay: 3s; }
+.card-4 { bottom: 15%; left: -15%; animation-delay: 4.5s; }
+@keyframes float-card { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+.hero-wave { position: absolute; bottom: -2px; left: 0; width: 100%; z-index: 3; }
+.hero-wave svg { display: block; width: 100%; height: 80px; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-tag { display: inline-block; padding: 6px 20px; background: linear-gradient(135deg, rgba(26,58,143,0.08), rgba(6,182,212,0.08)); color: var(--primary); border-radius: 50px; font-size: 14px; font-weight: 600; margin-bottom: 16px; letter-spacing: 0.5px; }
+.section-title { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 800; color: var(--text); margin-bottom: 16px; line-height: 1.2; }
+.section-subtitle { font-size: 17px; color: var(--text-light); max-width: 600px; margin: 0 auto; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-content h3 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--text); margin-bottom: 20px; }
+.about-content p { color: var(--text-light); margin-bottom: 16px; font-size: 15px; }
+.about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 32px; }
+.about-feature { display: flex; gap: 14px; align-items: flex-start; }
+.feature-icon { width: 48px; height: 48px; min-width: 48px; background: linear-gradient(135deg, rgba(26,58,143,0.08), rgba(6,182,212,0.08)); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 20px; }
+.about-feature h4 { font-size: 15px; color: var(--text); margin-bottom: 4px; }
+.about-feature p { font-size: 13px; color: var(--text-light); margin-bottom: 0; }
+.about-img-wrapper { position: relative; }
+.about-img-placeholder { width: 100%; height: 450px; background: linear-gradient(135deg, #f0f4ff, #e0f2fe); border-radius: var(--radius-lg); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--primary); gap: 12px; border: 2px dashed var(--border); }
+.about-img-placeholder i { font-size: 64px; opacity: 0.4; }
+.about-img-placeholder span { font-size: 18px; font-weight: 600; opacity: 0.6; }
+.about-img-placeholder small { font-size: 13px; opacity: 0.4; }
+.experience-badge { position: absolute; bottom: -20px; left: -20px; background: var(--gradient); color: #fff; padding: 20px 28px; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-lg); }
+.exp-number { display: block; font-size: 36px; font-weight: 800; font-family: 'Playfair Display', serif; line-height: 1; }
+.exp-text { font-size: 12px; opacity: 0.9; font-weight: 500; }
+.courses { background: var(--bg-light); position: relative; }
+.courses-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 20% 50%, rgba(26,58,143,0.03) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(6,182,212,0.03) 0%, transparent 50%); }
+.courses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px; position: relative; z-index: 1; }
+.course-card { background: #fff; border-radius: var(--radius-lg); padding: 36px 32px; position: relative; overflow: hidden; transition: var(--transition); border: 1px solid var(--border); display: flex; flex-direction: column; }
+.course-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--gradient); transform: scaleX(0); transition: transform 0.4s ease; }
+.course-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: transparent; }
+.course-card:hover::before { transform: scaleX(1); }
+.course-icon { width: 64px; height: 64px; background: linear-gradient(135deg, rgba(26,58,143,0.08), rgba(6,182,212,0.08)); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 28px; color: var(--primary); margin-bottom: 20px; transition: var(--transition); }
+.course-card:hover .course-icon { background: var(--gradient); color: #fff; transform: scale(1.05); }
+.course-badge { position: absolute; top: 20px; right: 20px; background: var(--gradient-warm); color: #fff; padding: 4px 14px; border-radius: 50px; font-size: 12px; font-weight: 600; }
+.course-card h3 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 12px; }
+.course-card > p { color: var(--text-light); font-size: 14px; margin-bottom: 20px; line-height: 1.7; }
+.course-features { margin-bottom: 24px; flex-grow: 1; }
+.course-features li { display: flex; align-items: center; gap: 10px; padding: 6px 0; font-size: 14px; color: var(--text); }
+.course-features li i { color: #22c55e; font-size: 12px; }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.why-card { text-align: center; padding: 40px 28px; background: #fff; border-radius: var(--radius-lg); border: 1px solid var(--border); transition: var(--transition); }
+.why-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.why-icon { width: 72px; height: 72px; background: linear-gradient(135deg, rgba(26,58,143,0.08), rgba(6,182,212,0.08)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; color: var(--primary); margin: 0 auto 20px; transition: var(--transition); }
+.why-card:hover .why-icon { background: var(--gradient); color: #fff; transform: scale(1.1); }
+.why-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+.why-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+.testimonials { background: var(--bg-light); }
+.testimonial-slider { max-width: 900px; margin: 0 auto; position: relative; overflow: hidden; }
+.testimonial-track { display: flex; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+.testimonial-card { min-width: 100%; padding: 48px; background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; border: 1px solid var(--border); }
+.testimonial-stars { margin-bottom: 20px; color: #fbbf24; font-size: 20px; display: flex; justify-content: center; gap: 4px; }
+.testimonial-text { font-size: 18px; color: var(--text); line-height: 1.8; font-style: italic; margin-bottom: 28px; position: relative; }
+.testimonial-text::before { content: '\201C'; font-size: 60px; color: var(--primary); opacity: 0.15; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-family: 'Playfair Display', serif; }
+.testimonial-author { display: flex; align-items: center; justify-content: center; gap: 14px; }
+.author-avatar { width: 52px; height: 52px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 22px; }
+.testimonial-author h4 { font-size: 16px; font-weight: 600; color: var(--text); }
+.testimonial-author span { font-size: 13px; color: var(--text-light); }
+.testimonial-controls { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 32px; }
+.testimonial-btn { width: 44px; height: 44px; border: 2px solid var(--border); border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text); font-size: 14px; transition: var(--transition); }
+.testimonial-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+.testimonial-dots { display: flex; gap: 8px; }
+.testimonial-dots .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border); cursor: pointer; transition: var(--transition); }
+.testimonial-dots .dot.active { background: var(--primary); width: 28px; border-radius: 5px; }
+.cta-section { background: linear-gradient(135deg, #0a1628 0%, #1a3a8f 50%, #2d5fd3 100%); padding: 80px 0; position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; width: 400px; height: 400px; background: rgba(6,182,212,0.1); border-radius: 50%; top: -100px; right: -100px; }
+.cta-content { text-align: center; position: relative; z-index: 1; }
+.cta-content h2 { font-family: 'Playfair Display', serif; font-size: 40px; color: #fff; margin-bottom: 16px; }
+.cta-content p { font-size: 17px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 32px; }
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.contact-card { display: flex; gap: 16px; padding: 24px; background: var(--bg-light); border-radius: var(--radius-md); margin-bottom: 16px; transition: var(--transition); border: 1px solid transparent; }
+.contact-card:hover { border-color: var(--primary); transform: translateX(8px); box-shadow: var(--shadow-md); }
+.contact-icon { width: 52px; height: 52px; min-width: 52px; background: var(--gradient); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; }
+.contact-card h4 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+.contact-card p, .contact-card a { font-size: 14px; color: var(--text-light); line-height: 1.6; }
+.contact-card a:hover { color: var(--primary); }
+.timing-table { margin-top: 4px; }
+.timing-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 14px; color: var(--text-light); gap: 16px; }
+.social-links { display: flex; gap: 12px; margin-top: 20px; }
+.social-links a { width: 44px; height: 44px; background: var(--bg-light); border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 16px; transition: var(--transition); }
+.social-links a:hover { background: var(--gradient); color: #fff; border-color: transparent; transform: translateY(-3px); }
+.contact-map { position: relative; min-height: 450px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+.map-overlay { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2; }
+.footer { background: #0a1628; color: rgba(255,255,255,0.7); padding: 60px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.footer-logo .logo-name { color: #fff; }
+.footer-logo .logo-tagline { color: rgba(255,255,255,0.6); }
+.footer-about p { font-size: 14px; line-height: 1.8; margin-bottom: 20px; }
+.footer-about .social-links a { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.6); }
+.footer-about .social-links a:hover { background: var(--gradient); color: #fff; }
+.footer-links h4, .footer-contact h4 { color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+.footer-links ul li { margin-bottom: 10px; }
+.footer-links ul li a { font-size: 14px; color: rgba(255,255,255,0.6); transition: var(--transition); }
+.footer-links ul li a:hover { color: #fff; padding-left: 8px; }
+.footer-contact ul li { display: flex; gap: 12px; margin-bottom: 14px; font-size: 14px; align-items: flex-start; }
+.footer-contact ul li i { color: var(--accent); margin-top: 4px; min-width: 16px; }
+.footer-contact ul li a { color: rgba(255,255,255,0.6); }
+.footer-contact ul li a:hover { color: #fff; }
+.footer-bottom { padding: 20px 0; text-align: center; font-size: 13px; color: rgba(255,255,255,0.4); }
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 30px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 999; transition: var(--transition); animation: whatsapp-pulse 2s infinite; }
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
+.whatsapp-tooltip { position: absolute; right: 72px; background: #333; color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 500; white-space: nowrap; opacity: 0; visibility: hidden; transition: var(--transition); }
+.whatsapp-float:hover .whatsapp-tooltip { opacity: 1; visibility: visible; }
+@keyframes whatsapp-pulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); } 70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
+.back-to-top { position: fixed; bottom: 100px; right: 30px; width: 44px; height: 44px; background: var(--primary); color: #fff; border: none; border-radius: 50%; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 998; box-shadow: var(--shadow-md); }
+.back-to-top.show { opacity: 1; visibility: visible; }
+.back-to-top:hover { background: var(--primary-dark); transform: translateY(-3px); }
+[data-aos] { opacity: 0; transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+[data-aos="fade-up"] { transform: translateY(40px); }
+[data-aos="fade-down"] { transform: translateY(-40px); }
+[data-aos="fade-right"] { transform: translateX(-40px); }
+[data-aos="fade-left"] { transform: translateX(40px); }
+[data-aos="zoom-in"] { transform: scale(0.9); }
+[data-aos].aos-animate { opacity: 1; transform: translateY(0) translateX(0) scale(1); }
+.nav-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; opacity: 0; visibility: hidden; transition: var(--transition); }
+.nav-overlay.active { opacity: 1; visibility: visible; }
+@media (max-width: 1024px) {
+    .hero-container { grid-template-columns: 1fr; text-align: center; }
+    .hero-description { margin: 0 auto 32px; }
+    .hero-buttons { justify-content: center; }
+    .hero-stats { justify-content: center; }
+    .hero-visual { display: none; }
+    .hero h1 { font-size: 42px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .nav-links { position: fixed; top: 0; right: -100%; width: 80%; max-width: 360px; height: 100vh; background: #fff; flex-direction: column; padding: 100px 40px 40px; gap: 4px; box-shadow: var(--shadow-xl); transition: right 0.4s ease; z-index: 1000; }
+    .nav-links.active { right: 0; }
+    .nav-links a { color: var(--text) !important; padding: 12px 16px; font-size: 16px; width: 100%; }
+    .nav-links a:hover, .nav-links a.active { background: rgba(26,58,143,0.08) !important; color: var(--primary) !important; }
+    .hamburger { display: flex; }
+    .nav-cta { display: none; }
+    .section { padding: 70px 0; }
+    .hero { min-height: auto; padding: 120px 0 80px; }
+    .hero h1 { font-size: 32px; }
+    .hero-description { font-size: 15px; }
+    .hero-stats { flex-direction: column; gap: 16px; padding: 20px; }
+    .stat-divider { width: 40px; height: 1px; }
+    .section-title { font-size: 30px; }
+    .about-features { grid-template-columns: 1fr; }
+    .courses-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .testimonial-card { padding: 28px 20px; }
+    .testimonial-text { font-size: 15px; }
+    .cta-content h2 { font-size: 28px; }
+    .hero-buttons .btn { padding: 12px 24px; font-size: 14px; }
+}
+@media (max-width: 480px) {
+    .hero h1 { font-size: 26px; }
+    .hero-badge { font-size: 12px; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span>P</span><span>C</span><span>B</span><span>M</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">PCBM</span>
+                    <span class="logo-tagline">Career Institute</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/918882725561" class="nav-cta" target="_blank">
+                <i class="fab fa-whatsapp"></i> Enquire Now
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-down">
+                    <i class="fas fa-star"></i> Trusted by 1000+ Students
+                </div>
+                <h1 data-aos="fade-up">
+                    Shape Your <span class="gradient-text">Future</span> With
+                    <span class="highlight">Expert Guidance</span>
+                </h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="100">
+                    Premier coaching institute in Karol Bagh, Delhi offering top-notch preparation for
+                    <strong>NEET, IIT-JEE, Board Exams, Commerce & Olympiads</strong> with experienced faculty and proven results.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20want%20to%20know%20more%20about%20PCBM%20Career%20Institute" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book Free Demo Class
+                    </a>
+                    <a href="#courses" class="btn btn-outline">
+                        <i class="fas fa-book-open"></i> Explore Courses
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1000">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Expert Faculty</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="hero-image-wrapper">
+                    <div class="hero-graphic">
+                        <div class="graphic-circle"></div>
+                        <div class="floating-card card-1">
+                            <i class="fas fa-flask"></i>
+                            <span>NEET Prep</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-calculator"></i>
+                            <span>IIT-JEE</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-trophy"></i>
+                            <span>Top Results</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="fas fa-book"></i>
+                            <span>Board Exams</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C360,120 720,0 1080,64 C1260,96 1380,80 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About <span class="gradient-text">PCBM Career Institute</span></h2>
+                <p class="section-subtitle">Empowering students to achieve academic excellence since our inception</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <h3>Your Pathway to Academic Excellence</h3>
+                    <p>
+                        PCBM Career Institute is a premier educational training center located in the heart of
+                        Karol Bagh, Delhi. We specialize in career development and academic coaching, preparing
+                        students for professional success across various fields.
+                    </p>
+                    <p>
+                        Our institute features experienced educators who are passionate about teaching and
+                        dedicated to helping every student reach their full potential. We provide comprehensive
+                        study materials, regular tests, and personalized attention to ensure outstanding results.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div>
+                                <h4>Expert Faculty</h4>
+                                <p>Highly experienced and dedicated teachers</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-book-reader"></i></div>
+                            <div>
+                                <h4>Study Material</h4>
+                                <p>Comprehensive notes and practice papers</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h4>Small Batches</h4>
+                                <p>Personal attention to every student</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-clipboard-check"></i></div>
+                            <div>
+                                <h4>Regular Tests</h4>
+                                <p>Weekly assessments and performance tracking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <i class="fas fa-university"></i>
+                            <span>Institute Image</span>
+                            <small>Add your institute photo here</small>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-number">10+</span>
+                            <span class="exp-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses section" id="courses">
+        <div class="courses-bg"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Programs</span>
+                <h2 class="section-title">Courses We <span class="gradient-text">Offer</span></h2>
+                <p class="section-subtitle">Comprehensive coaching programs designed for academic success</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="course-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="course-badge">Popular</div>
+                    <h3>NEET Preparation</h3>
+                    <p>Comprehensive coaching for medical entrance with expert Biology, Physics & Chemistry faculty. Regular mock tests and doubt-clearing sessions.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Physics, Chemistry, Biology</li>
+                        <li><i class="fas fa-check"></i> Daily Practice Problems</li>
+                        <li><i class="fas fa-check"></i> Mock Test Series</li>
+                        <li><i class="fas fa-check"></i> Doubt Clearing Sessions</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20NEET%20coaching" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="course-badge">Popular</div>
+                    <h3>IIT-JEE Coaching</h3>
+                    <p>Result-oriented coaching for JEE Main & Advanced with in-depth coverage of Physics, Chemistry & Mathematics by experienced faculty.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> JEE Main & Advanced</li>
+                        <li><i class="fas fa-check"></i> Concept-based Teaching</li>
+                        <li><i class="fas fa-check"></i> Previous Year Papers</li>
+                        <li><i class="fas fa-check"></i> Performance Analysis</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20IIT-JEE%20coaching" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>K-12 Board Coaching</h3>
+                    <p>Expert coaching for CBSE & ICSE board exams from Class 1 to 12. Strong foundation building with focus on conceptual clarity.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Class 1 to 12</li>
+                        <li><i class="fas fa-check"></i> CBSE & ICSE Boards</li>
+                        <li><i class="fas fa-check"></i> All Subjects Covered</li>
+                        <li><i class="fas fa-check"></i> Regular Parent Updates</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20Board%20exam%20coaching" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="course-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Commerce Classes</h3>
+                    <p>Specialized coaching for Commerce stream students covering Accounts, Economics, Business Studies and Mathematics.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Accountancy</li>
+                        <li><i class="fas fa-check"></i> Economics</li>
+                        <li><i class="fas fa-check"></i> Business Studies</li>
+                        <li><i class="fas fa-check"></i> Applied Mathematics</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20Commerce%20classes" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Computer Classes</h3>
+                    <p>Learn programming languages, web development, and essential computer skills with hands-on training and project-based learning.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Programming Languages</li>
+                        <li><i class="fas fa-check"></i> Web Development</li>
+                        <li><i class="fas fa-check"></i> MS Office Suite</li>
+                        <li><i class="fas fa-check"></i> Hands-on Projects</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20Computer%20classes" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Olympiad Preparation</h3>
+                    <p>Specialized training for National & International Olympiads in Science, Mathematics and other subjects for competitive excellence.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Science Olympiad</li>
+                        <li><i class="fas fa-check"></i> Math Olympiad</li>
+                        <li><i class="fas fa-check"></i> SOF / NSO / IMO</li>
+                        <li><i class="fas fa-check"></i> Advanced Problem Solving</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20Olympiad%20preparation" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="course-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>B.Sc Tuition</h3>
+                    <p>Expert tuition for B.Sc students across various specializations with focus on university exam preparation and concept building.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> All B.Sc Subjects</li>
+                        <li><i class="fas fa-check"></i> University Exam Prep</li>
+                        <li><i class="fas fa-check"></i> Lab Support</li>
+                        <li><i class="fas fa-check"></i> Assignment Help</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20BSc%20tuition" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>B.Tech Tuition</h3>
+                    <p>Specialized tuition for engineering students covering core subjects, lab work, and semester exam preparation.</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Core Engineering Subjects</li>
+                        <li><i class="fas fa-check"></i> Semester Exam Prep</li>
+                        <li><i class="fas fa-check"></i> Project Guidance</li>
+                        <li><i class="fas fa-check"></i> Practical Support</li>
+                    </ul>
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20am%20interested%20in%20BTech%20tuition" class="btn btn-course" target="_blank">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section" id="why-us">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Why PCBM?</span>
+                <h2 class="section-title">Why Choose <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle">What makes PCBM Career Institute the right choice for your academic journey</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up">
+                    <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Experienced Faculty</h3>
+                    <p>Our teachers bring years of expertise and passion for teaching, ensuring the best guidance for every student.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Result Oriented</h3>
+                    <p>Our focused approach and systematic teaching methodology ensures outstanding results year after year.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Personal Attention</h3>
+                    <p>Small batch sizes ensure every student gets individual attention and their doubts are properly addressed.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+                    <h3>Affordable Fees</h3>
+                    <p>Quality education at reasonable fees. We believe every deserving student should have access to great coaching.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Prime Location</h3>
+                    <p>Conveniently located in Karol Bagh, Delhi with easy access via metro and public transport.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-icon"><i class="fas fa-chalkboard"></i></div>
+                    <h3>Free Demo Class</h3>
+                    <p>Attend a free demo class before enrollment to experience our teaching quality firsthand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Student Reviews</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Students Say</span></h2>
+                <p class="section-subtitle">Hear from our students about their learning experience at PCBM</p>
+            </div>
+            <div class="testimonial-slider" data-aos="fade-up">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Amazing to have a mentor like Parveen sir. He pushes us to peak level. The teaching methodology here is outstanding and the faculty truly cares about each student's progress."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user-graduate"></i></div>
+                            <div>
+                                <h4>Student</h4>
+                                <span>NEET Aspirant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The quality of instruction in math and science is excellent. Faculty members are cooperative and devoted. The study materials provided are comprehensive and very helpful for exam preparation."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user-graduate"></i></div>
+                            <div>
+                                <h4>Student</h4>
+                                <span>Class 12 Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Friendly teaching methodology and a very positive learning atmosphere. The teachers go above and beyond to ensure every student understands the concepts thoroughly. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user-graduate"></i></div>
+                            <div>
+                                <h4>Student</h4>
+                                <span>IIT-JEE Aspirant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Join PCBM Career Institute today and take the first step towards achieving your academic dreams. Book a free demo class now!</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class" class="btn btn-white" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Book Free Demo
+                    </a>
+                    <a href="tel:+918882725561" class="btn btn-outline-white">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle">Visit us or reach out for any queries about admissions and courses</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Our Address</h4>
+                            <p>26-B/4, 1st Floor, Desh Bandhu Gupta Road,<br>
+                            Opposite MCD Office, Karol Bagh,<br>
+                            Dev Nagar, Delhi - 110005</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p><a href="tel:+918882725561">+91 88827 25561</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/918882725561" target="_blank">+91 88827 25561</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <div class="timing-table">
+                                <div class="timing-row">
+                                    <span>Monday - Saturday</span>
+                                    <span>9:00 AM - 9:00 PM</span>
+                                </div>
+                                <div class="timing-row">
+                                    <span>Sunday</span>
+                                    <span>9:00 AM - 1:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/pcbmcareerinstitute/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/pcbmcareerinstitute/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/pcmcareer" target="_blank" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/918882725561" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map" data-aos="fade-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5!2d77.185!3d28.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM5JzAwLjAiTiA3N8KwMTEnMDYuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%"
+                        height="100%"
+                        style="border:0; border-radius: 16px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-overlay">
+                        <a href="https://maps.google.com/?q=PCBM+Career+Institute+Karol+Bagh+Delhi" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-name">PCBM</span>
+                            <span class="logo-tagline">Career Institute</span>
+                        </div>
+                    </a>
+                    <p>Premier coaching institute in Karol Bagh, Delhi offering expert preparation for competitive exams and board exams with experienced faculty.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/pcbmcareerinstitute/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/pcbmcareerinstitute/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/pcmcareer" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/918882725561" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Courses</h4>
+                    <ul>
+                        <li><a href="#courses">NEET Preparation</a></li>
+                        <li><a href="#courses">IIT-JEE Coaching</a></li>
+                        <li><a href="#courses">Board Exam Coaching</a></li>
+                        <li><a href="#courses">Commerce Classes</a></li>
+                        <li><a href="#courses">Computer Classes</a></li>
+                        <li><a href="#courses">Olympiad Prep</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 26-B/4, 1st Floor, DB Gupta Road, Karol Bagh, Delhi</li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+918882725561">+91 88827 25561</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918882725561">WhatsApp Us</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM-9PM | Sun: 9AM-1PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PCBM Career Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918882725561?text=Hi%2C%20I%20want%20to%20know%20more%20about%20PCBM%20Career%20Institute" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+window.addEventListener('load',()=>{const p=document.getElementById('preloader');if(p){setTimeout(()=>{p.classList.add('hide');setTimeout(()=>p.remove(),500)},800)}initAOS();animateCounters()});
+const navbar=document.getElementById('navbar');function handleNavScroll(){if(!navbar)return;if(window.scrollY>50){navbar.classList.add('scrolled')}else{const h=window.location.pathname==='/'||window.location.pathname.endsWith('index.html')||window.location.pathname.endsWith('/');if(h)navbar.classList.remove('scrolled')}}window.addEventListener('scroll',handleNavScroll);handleNavScroll();
+const hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks'),navOverlay=document.getElementById('navOverlay');
+if(hamburger&&navLinks){hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navLinks.classList.toggle('active');if(navOverlay)navOverlay.classList.toggle('active');document.body.style.overflow=navLinks.classList.contains('active')?'hidden':''});navLinks.querySelectorAll('a').forEach(l=>{l.addEventListener('click',()=>{hamburger.classList.remove('active');navLinks.classList.remove('active');if(navOverlay)navOverlay.classList.remove('active');document.body.style.overflow=''})});if(navOverlay){navOverlay.addEventListener('click',()=>{hamburger.classList.remove('active');navLinks.classList.remove('active');navOverlay.classList.remove('active');document.body.style.overflow=''})}}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=this.getAttribute('href');if(t==='#')return;const el=document.querySelector(t);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'})}})});
+const backToTop=document.getElementById('backToTop');if(backToTop){window.addEventListener('scroll',()=>{backToTop.classList.toggle('show',window.scrollY>400)});backToTop.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'})})}
+function animateCounters(){const c=document.querySelectorAll('.stat-number[data-count]');if(!c.length)return;const o=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){const ct=en.target,tg=parseInt(ct.getAttribute('data-count')),st=tg/(2000/16);let cur=0;const up=()=>{cur+=st;if(cur<tg){ct.textContent=Math.floor(cur);requestAnimationFrame(up)}else ct.textContent=tg};up();o.unobserve(ct)}})},{threshold:0.5});c.forEach(el=>o.observe(el))}
+function initAOS(){const els=document.querySelectorAll('[data-aos]');if(!els.length)return;const o=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){const d=en.target.getAttribute('data-aos-delay')||0;setTimeout(()=>en.target.classList.add('aos-animate'),parseInt(d));o.unobserve(en.target)}})},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});els.forEach(el=>o.observe(el))}
+const tTrack=document.getElementById('testimonialTrack'),prevBtn=document.getElementById('prevBtn'),nextBtn=document.getElementById('nextBtn'),dotsC=document.getElementById('testimonialDots');
+if(tTrack&&prevBtn&&nextBtn&&dotsC){const cards=tTrack.querySelectorAll('.testimonial-card');let cur=0;const total=cards.length;for(let i=0;i<total;i++){const d=document.createElement('div');d.classList.add('dot');if(i===0)d.classList.add('active');d.addEventListener('click',()=>go(i));dotsC.appendChild(d)}function go(i){cur=i;tTrack.style.transform=`translateX(-${cur*100}%)`;dotsC.querySelectorAll('.dot').forEach((d,j)=>d.classList.toggle('active',j===cur))}prevBtn.addEventListener('click',()=>{cur=(cur-1+total)%total;go(cur)});nextBtn.addEventListener('click',()=>{cur=(cur+1)%total;go(cur)});let auto=setInterval(()=>{cur=(cur+1)%total;go(cur)},5000);tTrack.addEventListener('mouseenter',()=>clearInterval(auto));tTrack.addEventListener('mouseleave',()=>{auto=setInterval(()=>{cur=(cur+1)%total;go(cur)},5000)});let tX=0;tTrack.addEventListener('touchstart',e=>{tX=e.changedTouches[0].screenX},{passive:true});tTrack.addEventListener('touchend',e=>{const d=tX-e.changedTouches[0].screenX;if(Math.abs(d)>50){cur=d>0?(cur+1)%total:(cur-1+total)%total;go(cur)}},{passive:true})}
+const fBtns=document.querySelectorAll('.filter-btn'),gItems=document.querySelectorAll('.gallery-item');if(fBtns.length&&gItems.length){fBtns.forEach(b=>{b.addEventListener('click',()=>{fBtns.forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.getAttribute('data-filter');gItems.forEach(it=>{if(f==='all'||it.getAttribute('data-category')===f){it.style.display='';it.style.animation='fadeIn 0.5s ease forwards'}else it.style.display='none'})})})}
+const st=document.createElement('style');st.textContent='@keyframes fadeIn{from{opacity:0;transform:scale(0.95)}to{opacity:1;transform:scale(1)}}';document.head.appendChild(st);
+    </script>
+</body>
+</html>
